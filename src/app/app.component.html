@@ -1,0 +1,34 @@
+<div class="container">
+
+  <!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ nombre }}!
+  </h1>
+  <hr>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr class="warning">
+        <td>id</td>
+        <td>nombres</td>
+        <td>apellidos</td>
+        <td>edad</td>
+        <td>sexo</td>
+        <td>dni</td>
+      </tr>      
+    </thead>
+    <tbody>
+      <tr *ngFor = "let paciente of pacientes ">
+        <td>{{paciente.id}}</td>
+        <td>{{paciente.nombres}}</td>
+        <td>{{paciente.apellidos}}</td>
+        <td>{{paciente.edad}}</td>
+        <td>{{paciente.sexo}}</td>
+        <td>{{paciente.dni}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</div>
