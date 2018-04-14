@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './micomponente/micomponente.component';
 import { OtrocomponenteComponent } from './otrocomponente/otrocomponente.component';
 import { ComponentesincssComponent } from './componentesincss/componentesincss.component';
-
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ComponentesincssComponent } from './componentesincss/componentesincss.c
     ComponentesincssComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
